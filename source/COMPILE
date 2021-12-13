@@ -1,0 +1,1 @@
+pghpf -Mf90 nrtype.f90 init.f90 boundary.f90 uvp.f90 visual.f90 surface.f90 extras.f90 main.f90 -o run

@@ -1,0 +1,30 @@
+0) directions for UNIX/LINUX systems
+
+1) to compile
+
+    in directory source
+
+       edit COMPILE and replace pghpf -Mf90 with the desired compiler
+       chmod ugo+x COMPILE
+       COMPILE
+
+2) mv run ../run
+   cd ../run
+
+3) run < backstep.par  (or any other *.par data set) 
+
+4) f90 version tested in single (PR=SP in NRTYPE.f90) or double (PR=DP) precision 
+
+     backstep.par  (SP,DP)
+     rayleigh.par  (SP,DP)
+     dcavity.par   (SP,DP)
+     obstacle.par  (SP)  (fails in pgf90 with particle tracing on)
+     wave.par      (SP)
+     drop.par      (SP)
+     dam.par       (SP)
+
+5) Three MatLab M files are supplied for plotting results:
+
+     conplot.m  (plots PSI contours `contour_data' at end of calculation)
+     streaks_1.m (plots streaklines at a single instant in time) 
+     streaks_n.m (movie of evolving streaklines) 

@@ -1,0 +1,9 @@
+1) Do not use -fast optimization with pgf90 
+
+2) For the data set obstacle.par, and for the pgf90
+   compiler, the simulation fails at t=19.+ whenever
+   particle tracing is turned on. This corresponds to
+   the time when the first particles injected would be
+   exiting at the downstream boundary. The simulation
+   terminates normally when compiled with f90 on
+   SGI machines.
